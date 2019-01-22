@@ -9,6 +9,7 @@
 # RKesterson, 2019-01-22, Completed part three
 # ---------------------------------------------- #
 
+'''
 # Part one
 levelOne = '+ - - - - + - - - - +'
 levelTwo = '|         |         |'
@@ -26,5 +27,29 @@ print(levelTwo)
 print(levelOne)
 
 # Part two
+# Define the function
+def print_grid(n):
+    dashCount = int(n / 2)
+    post = '+ '
+    column = '| '
+    floor = '- '
+    openFloor = '  '
+    levelOne = post + floor * dashCount + post + floor * dashCount + post
+    levelTwo = column + openFloor * dashCount + column + openFloor * dashCount + column
+    print(levelOne)
+    i = 0
+    while i < dashCount:
+        print(levelTwo)
+        i += 1
+    print(levelOne)
+    i = 0
+    while i < dashCount:
+        print(levelTwo)
+        i += 1
+    print(levelOne)
+
+# Call the function
+print_grid(15)
+'''
 
 # Part three

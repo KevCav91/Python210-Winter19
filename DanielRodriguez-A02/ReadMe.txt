@@ -1,1 +1,1 @@
-This is teh folder I will use for Assignment 2.
+This is the folder I will use for Assignment 2.

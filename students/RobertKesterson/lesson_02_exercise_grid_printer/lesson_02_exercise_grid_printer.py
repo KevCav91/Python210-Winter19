@@ -10,6 +10,20 @@
 # ---------------------------------------------- #
 
 # Part one
+levelOne = '+ - - - - + - - - - +'
+levelTwo = '|         |         |'
+
+print(levelOne)
+print(levelTwo)
+print(levelTwo)
+print(levelTwo)
+print(levelTwo)
+print(levelOne)
+print(levelTwo)
+print(levelTwo)
+print(levelTwo)
+print(levelTwo)
+print(levelOne)
 
 # Part two
 

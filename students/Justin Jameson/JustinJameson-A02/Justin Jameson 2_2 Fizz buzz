@@ -1,0 +1,43 @@
+# **************************
+# Title: Justin Jameson 2_2 Fizz Buzz
+# Desc: Fizz Buzz assignment
+# Change Log: (Who, When, What)
+# Justin Jameson, 01162019, created template
+# Justin Jameson, 01182019, worked on turning into a function, but could'nt figure out how to print each iteration of i.
+# Justin Jameson, 01212019, reverted a little bit, now printing from the function.
+#
+# **************************
+
+
+# -- Data --#
+# declare variables and constants
+# -- Processing --#
+# perform tasks
+# Function to return process the range and if then statements.
+def RangeAndVar(range1=0, range2 = 100, intReplaceN1=3, intReplaceN2=5, buzzWord1="Fizz", buzzWord2="Buzz"):
+    for i in range(range1, range2):
+        if i % intReplaceN1 and i % intReplaceN2 == 0:
+            print(buzzWord1, buzzWord2)
+        elif i % intReplaceN1 == 0:
+            print(buzzWord1)
+        elif i % intReplaceN2 == 0:
+            print(buzzWord2)
+        else: print(i)
+# end of function RangeAndVar
+
+# -- Presentation (Input/Output) --#
+# get user input
+
+
+range1 = int(input("Enter the first number of the range: "))
+range2 = int(input("Enter the last number of the range: "))
+intReplaceN1 = int(input("Enter the first multiple you would like to replace: "))
+intReplaceN2 = int(input("Enter the second multiple you would like to replace: "))
+buzzWord1 = input("Enter the first 'buzz word' to replace the first multiple: ")
+buzzWord2 = input("Enter the second 'buzz word' to replace the second multiple: ")
+
+RangeAndVar(range1, range2, intReplaceN1, intReplaceN2,buzzWord1,buzzWord2)
+
+
+
+

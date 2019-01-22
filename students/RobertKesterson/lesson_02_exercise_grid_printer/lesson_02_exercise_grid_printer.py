@@ -9,7 +9,6 @@
 # RKesterson, 2019-01-22, Completed part three
 # ---------------------------------------------- #
 
-'''
 # Part one
 levelOne = '+ - - - - + - - - - +'
 levelTwo = '|         |         |'
@@ -50,6 +49,23 @@ def print_grid(n):
 
 # Call the function
 print_grid(15)
-'''
 
 # Part three
+# Define the function
+def print_grid2(n, m):
+    unitTop = '+ ' + '- ' * m
+    unitTopFull = unitTop * n + '+'
+    unitBottom = '| ' + '  ' * m
+    unitBottomFull = unitBottom * n + '|'
+    i = 0
+    while i < n:
+        print(unitTopFull)
+        j = 0
+        while j < m:
+            print(unitBottomFull)
+            j += 1
+        i += 1
+    print(unitTopFull)
+
+# Call the function
+print_grid2(5, 3)

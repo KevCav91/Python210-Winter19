@@ -4,14 +4,26 @@
 # Change log: (who, when, what)
 # RKesterson, 2019-01-22, Created file
 # RKestesron, 2019-01-22, Stubbed out methods / parts
-# RKesterson, 2019-01-22, Completed program
+# RKesterson, 2019-01-22, Completed step one (fibonacci function)
+# RKesterson, 2019-01-22, Completed step two (lucas function)
+# RKesterson, 2019-01-22, Completed step three (sum_series function)
+# RKesterson, 2019-01-22, Completed testing using assert statements
 # ---------------------------------------------- #
 
+# Define the function
 def fibonacci(n):
     """ compute the nth Fibonacci number """
-    pass
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 2) + fibonacci(n - 1)
 
+# Call the function
+print(fibonacci(7))
 
+'''
 def lucas(n):
     """ compute the nth Lucas number """
     pass
@@ -31,7 +43,8 @@ def sum_series(n, n0=0, n1=1):
     """
     pass
 
-'''
+
+
 if __name__ == "__main__":
     # run some tests
     assert fibonacci(0) == 0

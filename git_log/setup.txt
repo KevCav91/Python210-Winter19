@@ -1,0 +1,75 @@
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Python210\Python210-Winter19> git branch RussellLarge
+PS C:\Python210\Python210-Winter19> git checkout RussellLarge
+Switched to branch 'RussellLarge'
+PS C:\Python210\Python210-Winter19> mkdir RussLarge-A01
+
+
+    Directory: C:\Python210\Python210-Winter19
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/15/2019   6:39 PM                RussLarge-A01
+
+
+PS C:\Python210\Python210-Winter19> cd RussLarge-A01
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git add .
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git status
+On branch RussellLarge
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   RLargeA01.txt
+
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git commit -m "Started Branch"
+[RussellLarge c7db2a5] Started Branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 RussLarge-A01/RLargeA01.txt
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin russlarge256
+error: src refspec russlarge256 does not match any.
+error: failed to push some refs to 'https://github.com/rootrUW/Python210-Winter19.git'
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin russlarge256
+error: src refspec russlarge256 does not match any.
+error: failed to push some refs to 'https://github.com/rootrUW/Python210-Winter19.git'
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin RussellLarge
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': russlarge256
+Password for 'https://russlarge256@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/rootrUW/Python210-Winter19.git/'
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin RussellLarge
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': fatal: could not read Username for 'https://github.com': No error
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin russlarge256
+error: src refspec russlarge256 does not match any.
+error: failed to push some refs to 'https://github.com/rootrUW/Python210-Winter19.git'
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin RussellLarge
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': fatal: could not read Username for 'https://github.com': No error
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin RussellLarge
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': fatal: could not read Username for 'https://github.com': No error
+PS C:\Python210\Python210-Winter19\RussLarge-A01> git push --set-upstream origin RussellLarge
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 369 bytes | 123.00 KiB/s, done.
+Total 4 (delta 1), reused 1 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rootrUW/Python210-Winter19.git
+   7e557dc..c7db2a5  RussellLarge -> RussellLarge
+Branch 'RussellLarge' set up to track remote branch 'RussellLarge' from 'origin'.
+PS C:\Python210\Python210-Winter19\RussLarge-A01>
+
+
+
+
+
+

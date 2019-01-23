@@ -9,7 +9,7 @@
 # RKesterson, 2019-01-22, Completed step three (sum_series function)
 # RKesterson, 2019-01-22, Completed testing using assert statements
 # ---------------------------------------------- #
-'''
+
 # Define the function
 def fibonacci(n):
     """ compute the nth Fibonacci number """
@@ -19,10 +19,10 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n - 2) + fibonacci(n - 1)
-    #pass
+    pass
 
 # Call the function
-print(fibonacci(7))
+#print(fibonacci(7))
 
 # Define the function
 def lucas(n):
@@ -33,11 +33,10 @@ def lucas(n):
         return 1
     else:
         return lucas(n - 2) + lucas(n - 1)
-    #pass
+    pass
 
 # Call the function
-print(lucas(5))
-'''
+#print(lucas(5))
 
 # Define the function
 def sum_series(n, m = 0, o = 1):
@@ -61,9 +60,8 @@ def sum_series(n, m = 0, o = 1):
     pass
 
 # Call the function
-print(sum_series(4, 2, 1))
+#print(sum_series(4, 2, 1))
 
-'''
 if __name__ == "__main__":
     # run some tests
     assert fibonacci(0) == 0
@@ -86,4 +84,3 @@ if __name__ == "__main__":
     assert sum_series(5, 2, 1) == lucas(5)
 
     print("tests passed")
-'''

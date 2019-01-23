@@ -9,7 +9,7 @@
 # RKesterson, 2019-01-22, Completed step three (sum_series function)
 # RKesterson, 2019-01-22, Completed testing using assert statements
 # ---------------------------------------------- #
-
+'''
 # Define the function
 def fibonacci(n):
     """ compute the nth Fibonacci number """
@@ -19,16 +19,27 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n - 2) + fibonacci(n - 1)
+    #pass
 
 # Call the function
 print(fibonacci(7))
 
 '''
+# Define the function
 def lucas(n):
     """ compute the nth Lucas number """
-    pass
+    if n == 0:
+        return 2
+    elif n == 1:
+        return 1
+    else:
+        return lucas(n - 2) + lucas(n - 1)
+    #pass
 
+# Call the function
+print(lucas(5))
 
+'''
 def sum_series(n, n0=0, n1=1):
     """
     compute the nth value of a summation series.

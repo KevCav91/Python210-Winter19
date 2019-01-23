@@ -24,7 +24,6 @@ def fibonacci(n):
 # Call the function
 print(fibonacci(7))
 
-'''
 # Define the function
 def lucas(n):
     """ compute the nth Lucas number """
@@ -38,9 +37,10 @@ def lucas(n):
 
 # Call the function
 print(lucas(5))
-
 '''
-def sum_series(n, n0=0, n1=1):
+
+# Define the function
+def sum_series(n, m = 0, o = 1):
     """
     compute the nth value of a summation series.
 
@@ -52,10 +52,18 @@ def sum_series(n, n0=0, n1=1):
     Once generalized that way, sum_series(n, 0, 1) should be equivalent to fibonacci(n).
     And sum_series(n, 2, 1) should be equivalent to lucas(n).
     """
+    if n == 0:
+        return m
+    elif n == 1:
+        return o
+    else:
+        return sum_series(n - 2, m, o) + sum_series(n - 1, m, o)
     pass
 
+# Call the function
+print(sum_series(4, 2, 1))
 
-
+'''
 if __name__ == "__main__":
     # run some tests
     assert fibonacci(0) == 0
